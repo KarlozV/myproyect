@@ -71,4 +71,16 @@ class PersonasController < ApplicationController
     def persona_params
       params.require(:persona).permit(:nombre, :email, :email_confirmation, :identificador)
     end
+
+    def enviarCorreo
+        #Creamos el usuario     
+        @persona1 = Persona.create({ nombre: 'Road To Sport', email: 'roadtosport@gmail.com',email_confirmation: 'roadtosport@gmail.com"', identificador: "Roadtosport2014", sexo: 'm', telefono: '5700552' })
+        
+        # Llamamos al   ActionMailer que creamos
+        ActionCorreo.bienvenido_email(@pers).deliver
+        
+        # mostramos el usuario en formato JSON
+        render json: @pers
+    end
+
 end

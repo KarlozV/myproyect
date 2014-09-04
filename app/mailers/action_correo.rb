@@ -1,12 +1,14 @@
 class ActionCorreo < ActionMailer::Base
-	
-	default from: "aquí locas tu correo de gmail"
-		
-		def bienvenido_email(user)
-		@user = user
-		@url = 'http://codeHero.co'
-		email_with_name = "#{@user.nombre} <#{@user.email}>"
-		mail(to: email_with_name,
-		subject: 'Aprende a programar con nuestros cursos gratis')
-		end
+	default from: "sportsena.cfdcm@gmail.com"
+	def bienvenido_email(user)
+	   @user = user
+	   @url  = 'http://SportSena.co'
+	   mail(to: @user.email, subject: 'Bienvenido')
+	 end
+
+	 def weekly
+    @greeting = "Hello"
+
+    mail to: "jh0n.fr3ddy@gmail.com"
+  end
 end
