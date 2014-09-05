@@ -41,7 +41,7 @@ Rails.application.configure do
   ssl: true,  
   address:              'smtp.gmail.com',
   port:                 80,
-  domain:               'gamil.com',
+  domain:               'gmail.com',
   user_name:            'sportsena.cfdcm@gmail.com',
   password:             'AdminSport_2014!',
   authentication:       :plain
