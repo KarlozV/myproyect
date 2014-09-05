@@ -40,8 +40,8 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   ssl: true,  
   address:              'smtp.gmail.com',
-  port:                 465,
-  domain:               'SENA.RED',
+  port:                 80,
+  domain:               'gamil.com',
   user_name:            'sportsena.cfdcm@gmail.com',
   password:             'AdminSport_2014!',
   authentication:       :plain

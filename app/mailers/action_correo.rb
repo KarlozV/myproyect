@@ -9,6 +9,6 @@ class ActionCorreo < ActionMailer::Base
 	 def weekly
     @greeting = "Hello"
 
-    mail to: "jh0n.fr3ddy@gmail.com"
+    mail to: "juan147123@gmail.com"
   end
 end

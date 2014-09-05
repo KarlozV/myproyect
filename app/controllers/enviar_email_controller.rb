@@ -8,6 +8,3 @@ class EnviarEmailController < ApplicationController
 	render json: @pers
 	end
 end
-
-
-
